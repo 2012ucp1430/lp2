@@ -7,6 +7,10 @@ html body {
     background-color: #F5F7FA;
 }
 
+.main-content {
+	max-width: 100% !important;
+}
+
 .page-header {
 	background-color: #f0cb35;
 	background-image: linear-gradient(to right, rgb(192, 36, 37), rgb(240, 203, 53));
@@ -33,10 +37,15 @@ html body {
 }
 
 .card-link {
+	font-size: 0.9rem;
     color: #009C9F;
 }
 
 .card-link:hover {
     text-decoration: underline;
     color: #c45500;
+}
+
+.card-footer {
+    font-size: 0.9rem !important;
 }
