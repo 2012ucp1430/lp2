@@ -2,11 +2,17 @@
 ---
 
 @import 'jekyll-theme-cayman';
-h1 {
-	font-size: 10px;
-}
 
 .page-header {
 	background-color: #f0cb35;
 	background-image: linear-gradient(to right, rgb(192, 36, 37), rgb(240, 203, 53));
+}
+
+.sdk-title {
+	color: #0066c0 !important;
+}
+
+.sdk-title a:hover {
+    text-decoration: underline;
+    color: #c45500;
 }
