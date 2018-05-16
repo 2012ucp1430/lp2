@@ -69,8 +69,8 @@ function init(){
 }
 
 function updateCardFooters() {
-    $('.java-footer').text('Last Updated at ' + javaSDKMetaData.updated_at);
-    $('.php-footer').text('Last Updated at ' + phpSDKMetaData.updated_at);
-    $('.js-footer').text('Last Updated at ' + jsSDKMetaData.updated_at);
+    $('#java-footer').text('Last Updated at ' + javaSDKMetaData.updated_at);
+    $('#php-footer').text('Last Updated at ' + phpSDKMetaData.updated_at);
+    $('#js-footer').text('Last Updated at ' + jsSDKMetaData.updated_at);
 }
 
