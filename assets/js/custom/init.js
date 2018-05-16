@@ -17,7 +17,7 @@ $(function(){
 });
 
 function loadJS() {
-    $.getJSON('https://api.github.com/repos/2012ucp1430/lp2/commits', function(data) {//Get Config From File
+    $.getJSON('https://api.github.com/repos/2012ucp1430/lp2', function(data) {//Get Config From File
         loadConfigJS(data);
     });
 }
@@ -32,7 +32,7 @@ function loadConfigJS(json){
 }
 
 function loadPHP() {
-    $.getJSON('https://api.github.com/repos/2012ucp1430/lp1/commits', function(data) {//Get Config From File
+    $.getJSON('https://api.github.com/repos/2012ucp1430/lp1', function(data) {//Get Config From File
         loadConfigPHP(data);
     });
 }
@@ -47,7 +47,7 @@ function loadConfigPHP(json){
 }
 
 function loadJava() {
-    $.getJSON('https://api.github.com/repos/2012ucp1430/landing.page/commits', function(data) {//Get Config From File
+    $.getJSON('https://api.github.com/repos/2012ucp1430/landing.page', function(data) {//Get Config From File
         loadConfigJava(data);
     });
 }
@@ -65,4 +65,12 @@ function loadConfigJava(json){
  */
 function init(){
     console.log("init starts");
+    updateCardFooters();
 }
+
+function updateCardFooters() {
+    $('.java-footer').text('Last Updated at ' + javaSDKMetaData.updated_at);
+    $('.php-footer').text('Last Updated at ' + phpSDKMetaData.updated_at);
+    $('.js-footer').text('Last Updated at ' + jsSDKMetaData.updated_at);
+}
+
