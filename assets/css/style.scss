@@ -3,13 +3,17 @@
 
 @import 'jekyll-theme-cayman';
 
+html body {
+    background-color: #F5F7FA;
+}
+
 .page-header {
 	background-color: #f0cb35;
 	background-image: linear-gradient(to right, rgb(192, 36, 37), rgb(240, 203, 53));
 }
 
-.sdk-title {
-	color: #0066c0 !important;
+.sdk-title a {
+	color: #0066c0;
 }
 
 .sdk-title a:hover {
@@ -19,4 +23,11 @@
 
 .paapi-h1 {
 	color: #E47911 !important;
+}
+
+.card {
+    border: none;
+    border-radius: 0;
+    -webkit-box-shadow: 0 10px 40px 0 rgba(62, 57, 107, 0.07), 0 2px 9px 0 rgba(62, 57, 107, 0.06);
+    box-shadow: 0 10px 40px 0 rgba(62, 57, 107, 0.07), 0 2px 9px 0 rgba(62, 57, 107, 0.06);
 }
