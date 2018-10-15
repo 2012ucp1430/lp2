@@ -72,5 +72,6 @@ function updateCardFooters() {
     $('#java-footer').text('Last Updated at ' +  new Date(jsSDKMetaData.updated_at).toUTCString());
     $('#php-footer').text('Last Updated at ' + new Date(phpSDKMetaData.updated_at).toUTCString());
     $('#js-footer').text('Last Updated at ' + new Date(jsSDKMetaData.updated_at).toUTCString());
+    $('#python-footer').text('Last Updated at ' + new Date(jsSDKMetaData.updated_at).toUTCString());
 }
 
